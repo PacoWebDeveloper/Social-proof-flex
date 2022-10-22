@@ -37,6 +37,9 @@
     width: 200px;
     color: var(--main-color);
 }
+.first-container > section p {
+    color: var(--secondary-color);
+}
 .box {
     width: inherit;
     justify-content: space-between;
@@ -96,4 +99,30 @@
     font-weight: 300;
     font-size: 0.8rem;
     line-height: 1.3rem;
+}
+@media (min-width: 1000px) {
+    body {
+        display: flex;
+        justify-content: center;
+    }
+    .main-container {
+        max-width: 1200px;
+    }
+    .first-container {
+        flex-direction: row;
+        height: 400px;
+    }
+    .first-container > section {
+        align-items: flex-start;
+        height: 300px;
+        width: 400px;
+        border: 1px solid black;
+    }
+    .first-container > section h1 {
+        text-align: left;
+        width: 60%;
+    }
+    .first-container > section p {
+        text-align: left;
+    }
 }
